@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>青研网</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-image: url("img/back.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+    h1 {
+        letter-spacing: 0.2em;
+        padding-top: 200px;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        color: #444444;
+    }
+    h3 {
+        padding-top: 20px;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        color: #444444;
+    }
+      .container {
+          background-color: #3c763d;
+          width: 180px;
+          height: 70px;
+          margin: auto;/* 设置左右 margin 为 auto，上下 margin 为  */
+          margin-top: 50px;
+          border-radius: 10%;
+    }
+      .box{
+          font-size: 20px;
+          text-align: center;
+          line-height: 60px
+      }
+  </style>
+</head>
+<body>
+
+<h1>欢迎使用青研网</h1>
+<h3>一个轻量的考研院校查询系统</h3>
+<div id="div1" class="container">
+        <div id="op1" class="box">查询专业院校</div>
+</div>
+<div id="div2" class="container">
+    <div id="op2" class="box">职业兴趣测试</div>
+</div>
+<script>
+    var op1=document.getElementById("op1");
+    op1.onclick = function (){
+        open("https://yz.chsi.com.cn/zsml/queryAction.do");
+    }
+    var op2=document.getElementById("op2");
+    op2.onclick = function (){
+        open("MBTI.html");
+    }
+</script>
+</body>
+</html>
